@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <withJansi>true</withJansi>
+
+        <encoder>
+            <pattern>%highlight(%.-1level) %date{HH:mm:ss.SSS} [%30.30logger] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--<logger name="org.springframework.boot.autoconfigure" level="DEBUG" />-->
+    <!--<logger name="org.springframework.boot" level="WARN" />-->
+    <!--<logger name="org.apache.kafka" level="DEBUG" />-->
+    <!--<logger name="org.springframework.integration" level="DEBUG" />-->
+    <!--<logger name="org.springframework.messaging" level="DEBUG" />-->
+
+    <!--<logger name="org.springframework.cloud" level="DEBUG" />-->
+
+    <!--
+    <logger name="org.apache.kafka.clients.consumer" level="DEBUG" />
+    -->
+
+    <!--
+    <logger name="org.springframework.kafka.listener" level="DEBUG" />
+-->
+
+    <logger name="demo" level="DEBUG" />
+    <logger name="com.github" level="DEBUG" />
+
+    <logger name="org.springframework.jdbc.core" level="DEBUG" />
+    <logger name="org.eclipse.jetty" level="ERROR" />
+
+    <root level="WARN">
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration>
